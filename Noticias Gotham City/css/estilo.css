@@ -1,0 +1,249 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvica, sans-serif;
+	/*MUDAR COR DEPOIS*/
+	background:black url(../imagens/City.jpg) repeat-x;
+	background-size: 1100px 300px;
+}
+#container{
+	width:750px ;
+	margin: 0 auto;
+
+
+}
+#topo{
+	height: 150px;
+	padding-top: 25px;
+	padding-bottom:100px ;
+	
+}
+.logo{
+	width: 350px;
+	height: 70px;
+	background: url(../imagens/logo.png) no-repeat center;
+	text-indent: -3000px;
+}
+/*** Barra de Navegação ***/
+ul{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	border-radius: 10px;
+}
+
+#topo ul{
+	background: #8B0000 ;
+	margin-top: 180px;
+	margin-left: 40px;
+	float: left;
+}
+
+#topo ul li{
+	float: left;
+	
+
+}
+
+#topo ul a{
+	font-size: 0.9em;
+	display:block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em ;
+	text-decoration: none;
+	color: white;
+	background: url(../imagens/divisor.png)no-repeat left center;
+}
+
+#topo ul .primeiro a{
+	background: none;
+}
+
+/*Para marcar a página- tem que fazer uma cópia de cada
+index e modificar conforme a pagina que será selecionada: body class="Home" */
+#topo ul a:hover{
+	color: black;
+}
+body.Noticias #navegacao a#Noticias,
+body.ghotam #navegacao a#ghotam,
+body.Batman #navegacao a#Batman,
+body.Crimes #navegacao a#Crimes,
+body.UltimasNoticias #navegacao  a#UltimasNoticias,
+body.Vilões #navegacao a#Vilões,
+body.Locais #navegacao a#Locais{
+	color: white;
+	background: #de003e;
+	cursor: text;
+	border-radius: 10px;
+}
+/* Configurar laout de três colunas */
+#conteudo{
+	margin-top: 60px;
+	
+
+}
+#lateral{
+	width: 160px;
+	float: left;
+	margin: -1296px 0 20px -190px;
+	
+		
+}
+
+#tres-colunas #primario{
+	width: 380px;
+	float: left;
+	margin: 0 0 10px 150px;
+}
+
+#uma-colunas #primario{
+	width: 750px;
+	background: url(../imagens/fundo.jpg);
+	float: left;
+	margin: 0 0 20px -20px;
+	color: white;
+}
+
+#secundario{
+	
+	width: 270px;
+	float: right;
+	margin-right: -300px;
+	margin-top: -1296px;
+	
+}
+
+/*Caixa*/
+.caixas{
+	margin: 15px 0;
+	padding: 0 0 5px 0;
+	background: #f3f3f3 url(../imagens/fundo.jpg) ;
+	color: white;
+
+}
+h2{
+	font-size: 1.0em;
+	background: #8B0000 ;
+	color: white;
+	padding:5px ;
+	text-align: center;
+	
+}
+
+.caixa-conteudo{
+	background: url(../imagens/fundo.png);
+	padding: 5px;
+	margin-top: 5px;
+
+}
+
+/*Formatar Laterais*/
+#lateral ul a{
+	font-size: 1.0em;
+	padding: 4px;
+	display: block;
+	line-height: 30px;
+	color: white;
+	text-decoration: none;
+	
+
+}
+#lateral ul a:hover{
+	color: #de003e;
+	background: url(../imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+
+}
+/*Formatando Formulários*/
+label{
+	display: block;
+	cursor: pointer;
+	padding-left: 5px;
+	text-align: 10px;
+}
+input{
+	padding: 7px;
+	margin-left: 3px;
+	border-radius: 8px;
+	width: 100px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+input.submit{
+	width: 80px;
+	color: #fff;
+	background: #b10333;
+	border: 2px solid #870529;
+	padding: 5px;
+	margin-left: 5px;
+}
+/*Formatando imagem*/
+img{
+
+	width: 100%;
+}
+/*Formatando links de noticias*/
+
+#lista-noticias img{
+	width: 130px;
+	height: 100px;
+	padding-left: 5px;
+	position: absolute;
+
+
+}
+#lista-noticias li a{
+	text-decoration: none;
+	text-align: right;
+
+
+}
+#lista-noticias h3{
+	color: white;
+	background:#870529;
+	float: right;
+	margin-right: 10px;
+}
+
+
+#lista-noticias #texto{
+	color: white;
+	padding-top: 25px;
+	margin: 50px 10px 15px 120px;
+}
+
+/*Formatando Cabeçalho*/
+h3{
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+	background:#870529 ;
+
+}
+#destaque h3{
+	background: #b10333;
+	color: white;
+}
+
+/*Rodape*/
+#container-rodape{
+	position: relative;
+	background: #8B0000;
+	padding: 20px;
+	margin: -150px -350px;
+}
+#rodape{
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+
+}
+/*página de gotham*/
+#primario #gotham {
+	margin: 15px;
+	text-transform: capitalize;
+}
